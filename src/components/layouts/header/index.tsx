@@ -91,7 +91,7 @@ const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
                                 src={
                                   "https://cdn-v2.mvillage.vn/homepage/images/flag/vi-flag.svg"
                                 }
-                                alt="en"
+                                alt="vi"
                                 loading="lazy"
                                 width={24}
                                 height={24}

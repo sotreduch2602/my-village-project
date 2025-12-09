@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  turbopack: {
+    root: __dirname,
+  },
   reactStrictMode: false,
   reactCompiler: true,
   images: {
@@ -16,4 +20,6 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin("./src/shared/i18n/request.ts");
+
+export default withNextIntl(nextConfig);
