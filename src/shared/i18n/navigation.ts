@@ -1,10 +1,5 @@
-export const navigation = {
-  en: [
-    { label: "Home", href: "/en" },
-    { label: "News", href: "/en/news" },
-  ],
-  vi: [
-    { label: "Trang chủ", href: "/vi" },
-    { label: "Tin tức", href: "/vi/news" },
-  ],
-};
+import { createNavigation } from "next-intl/navigation";
+import { routing } from "./routing";
+
+export const { Link, redirect, usePathname, useRouter, getPathname } =
+  createNavigation(routing);

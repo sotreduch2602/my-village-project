@@ -20,8 +20,22 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@/messages/*": ["./messages/*"],
+
+      //Public
+      "@/public/*": ["./public/*"],
       "@/fonts/*": ["./public/fonts/*"],
+
+      //Shared
       "@/shared/*": ["./src/shared/*"],
+      "@/services/*": ["./src/shared/services/*"],
+      "@/hooks/*": ["./src/shared/hooks/*"],
+      "@/constants/*": ["./src/shared/*"],
+      "@/enums/*": ["./src/shared/enums/*"],
+      "@/types/*": ["./src/shared/types/*"],
+      "@/store/*": ["./src/shared/store/*"],
+
+      //Components
       "@/components/*": ["./src/components/*"]
     }
   },
