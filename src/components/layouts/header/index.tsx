@@ -30,7 +30,6 @@ interface HomeHeaderProps extends React.HTMLAttributes<HTMLElement> {
 const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
   const [open, setOpen] = useState(false);
   console.log(lang);
-  
 
   return (
     <header className={cn("", className)}>
@@ -70,35 +69,17 @@ const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
                     <div className="container">
                       <div className="text-black4 rounded border-1px text-lg md:text-base transition  max-w-full h-auto border-stroke hover:bg-gray16">
                         <div className="flex items-center cursor-pointer gap-1.5 ">
-                          {lang === "en" ? (
-                            <>
-                              <Image
-                                className="rounded"
-                                src={
-                                  "https://cdn-v2.mvillage.vn/homepage/images/flag/en-flag.svg"
-                                }
-                                alt="en"
-                                loading="lazy"
-                                width={24}
-                                height={24}
-                              />
-                              <span className="text-base font-medium">ENG</span>
-                            </>
-                          ) : (
-                            <>
-                              <Image
-                                className="rounded"
-                                src={
-                                  "https://cdn-v2.mvillage.vn/homepage/images/flag/vi-flag.svg"
-                                }
-                                alt="vi"
-                                loading="lazy"
-                                width={24}
-                                height={24}
-                              />
-                              <span className="text-base font-medium">VIE</span>
-                            </>
-                          )}
+                          <Image
+                            className="rounded"
+                            src={`https://cdn-v2.mvillage.vn/homepage/images/flag/${lang}-flag.svg`}
+                            alt={lang ?? "en"}
+                            loading="lazy"
+                            width={24}
+                            height={24}
+                          />
+                          <span className="text-base font-medium uppercase">
+                            {lang}
+                          </span>
                         </div>
                       </div>
                     </div>

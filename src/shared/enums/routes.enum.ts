@@ -1,4 +1,5 @@
 export enum RouteKey {
+  WELCOME = "/",
   HOME = "/home",
   OUR_BRANDS = "/our-brands",
   SAN_FU_LOU = "/our-brands/san-fu-lou",
@@ -16,7 +17,6 @@ export enum RouteKey {
   RESERVATION = "/reservations",
   LOGIN = "/login",
   REGISTER = "/register",
-  WELCOME = "/",
   POLICY_OPERATING = "/policy/operating",
   POLICY_SHIPPING = "/policy/shipping",
   POLICY_PAYMENT = "/policy/payment",

@@ -8,7 +8,6 @@ export default async function HomeLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  console.log(locale);
 
   return (
     <main className="flex flex-col min-h-screen relative">
