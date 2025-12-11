@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { cn } from "@/shared/lib/utils";
+import { cn } from "@/lib/utils";
 import { Bell, Home, Menu, Settings, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
