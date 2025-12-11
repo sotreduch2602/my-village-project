@@ -1,1 +1,9 @@
-{}
+{
+  "HomeHeader": {
+    "Business": "Business",
+    "Loyalty Program": "Loyalty Program",
+    "Our Brands": "Our Brands",
+    "Short Stay": "Short Stay",
+    "Log in/Sign up": "Log in/Sign up"
+  }
+}

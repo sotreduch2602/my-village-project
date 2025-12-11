@@ -1,1 +1,19 @@
-{}
+{
+  "Header": {
+    "Business": "Kinh doanh",
+    "Loyalty Program": "Chương trình Khách hàng thân thiết",
+    "Our Brands": "Thương hiệu của chúng tôi",
+    "Short Stay": "Lưu trú ngắn",
+    "Log in/Sign up": "Đăng nhập/Đăng ký"
+  },
+
+  "Sidebar": {
+    "Menu:": "",
+    "Navigate through your app": "",
+    "Business": "Kinh doanh",
+    "Loyalty Program": "Chương trình Khách hàng thân thiết",
+    "Our Brands": "Thương hiệu của chúng tôi",
+    "Short Stay": "Lưu trú ngắn",
+    "Log in/Sign up": "Đăng nhập/Đăng ký"
+  }
+}

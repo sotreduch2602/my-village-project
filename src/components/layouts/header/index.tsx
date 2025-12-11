@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Bell, Home, Menu, Settings, User } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -29,7 +30,7 @@ interface HomeHeaderProps extends React.HTMLAttributes<HTMLElement> {
 
 const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
   const [open, setOpen] = useState(false);
-  console.log(lang);
+  const trans = useTranslations("Header");
 
   return (
     <header className={cn("", className)}>
@@ -60,7 +61,9 @@ const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
                           href={item.href}
                           className="gap-2.5 relative text-base font-medium leading-6 flex items-center cursor-pointer"
                         >
-                          <span className="capitalize">{item.label}</span>
+                          <span className="capitalize">
+                            {trans(item.label)}
+                          </span>
                         </Link>
                       );
                     })}
@@ -90,7 +93,7 @@ const HomeHeader = ({ className, lang }: HomeHeaderProps) => {
                       className="flex items-center py-1 px-2"
                       onClick={() => alert("Click")}
                     >
-                      Log in/Sign up
+                      {trans("Log in/Sign up")}
                     </Button>
                     <SheetTrigger asChild>
                       <Button variant={"ghost"} className="flex p-2 ms-2">
